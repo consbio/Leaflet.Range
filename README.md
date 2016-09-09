@@ -7,6 +7,13 @@ See the [example](//consbio.github.io/Leaflet.Range).
 *Tested with Leaflet 1.0.0-rc3*
 
 
+## Install
+
+```
+npm install leaflet-range
+```
+
+
 ## Usage
 
 Include the CSS:
