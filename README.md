@@ -37,7 +37,7 @@ Example usage:
 
 ```javascript
 
-var slider = L.control.slider({
+var slider = L.control.range({
     position: 'topright',
     min: 0,
     max: 100,
