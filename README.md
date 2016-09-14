@@ -30,7 +30,8 @@ Include the JavaScript:
 ```
 
 
-The control can be oriented vertically or horizontally. It will fire ```input``` and ```change``` events as the user interacts with the slider.
+The control can be oriented vertically or horizontally. It will fire ```input``` and ```change``` events as the user 
+interacts with the slider.
 
 
 Example usage:
@@ -56,4 +57,5 @@ map.addControl(slider);
 
 
 ## Credits:
-Developed and maintained with support from the U.S. Forest Service and the USDA Northwest Climate Hub.
+Developed and maintained with support from the [U.S. Forest Service](http://www.fs.fed.us/) and the 
+[USDA Northwest Climate Hub](http://www.climatehubs.oce.usda.gov/northwest).
