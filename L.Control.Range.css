@@ -24,6 +24,7 @@
 
 .leaflet-range-control input[type=range] {
     display: block;
+    cursor: pointer;
     width: 100%;
     margin: 0px;
 }
