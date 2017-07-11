@@ -4,7 +4,7 @@ A simple HTML5 range control for Leaflet maps.
 
 See the [example](//consbio.github.io/Leaflet.Range).
 
-*Tested with Leaflet 1.0.0-rc3*
+*Tested with Leaflet 1.1.0*
 
 
 ## Install
