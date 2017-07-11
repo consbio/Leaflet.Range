@@ -54,8 +54,9 @@ L.Control.Range = L.Control.extend({
         this._slider.value = value;
     },
 
-    includes: L.Mixin.Events
 });
+
+L.Control.Range.include(L.Evented.prototype)
 
 L.control.range = function (options) {
   return new L.Control.Range(options);
