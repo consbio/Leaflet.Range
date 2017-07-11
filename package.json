@@ -1,6 +1,6 @@
 {
   "name": "leaflet-range",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A simple HTML5 range control for Leaflet maps",
   "homepage": "http://github.com/consbio/Leaflet.Range",
   "author": "Conservation Biology Institute <nik.molnar@consbio.org>",
