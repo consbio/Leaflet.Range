@@ -36,6 +36,7 @@
 
 .leaflet-range-control input[type=range][orient=vertical] {
     height: 150px;
+    writing-mode: bt-lr;
 
     /*
      * -webkit-appearance is non-standard and may break in the future:
