@@ -6,13 +6,15 @@ L.Control.Range = L.Control.extend({
         value: 0,
         step: 1,
         orient: 'vertical',
-        iconClass: 'leaflet-range-icon'
+        iconClass: 'leaflet-range-icon',
+        icon: true
     },
     
     onAdd: function(map) {
         var container = L.DomUtil.create('div', 'leaflet-range-control leaflet-bar ' + this.options.orient);
-        L.DomUtil.create('span', this.options.iconClass, container);
-
+        if (this.options.icon) {
+          L.DomUtil.create('span', this.options.iconClass, container);
+        };
         var slider = L.DomUtil.create('input', '', container);
         slider.type = 'range';
         slider.setAttribute('orient', this.options.orient);
@@ -21,17 +23,17 @@ L.Control.Range = L.Control.extend({
         slider.step = this.options.step;
         slider.value = this.options.value;
 
-        L.DomEvent.on(slider, 'mousedown mouseup click', L.DomEvent.stopPropagation);
+        L.DomEvent.on(slider, 'mousedown mouseup click touchstart', L.DomEvent.stopPropagation);
 
         /* IE11 seems to process events in the wrong order, so the only way to prevent map movement while dragging the
          * slider is to disable map dragging when the cursor enters the slider (by the time the mousedown event fires
          * it's too late becuase the event seems to go to the map first, which results in any subsequent motion
          * resulting in map movement even after map.dragging.disable() is called.
          */
-        L.DomEvent.on(slider, 'mouseenter', function(e) {
+        L.DomEvent.on(slider, 'mouseenter touchstart', function(e) {
             map.dragging.disable()
         });
-        L.DomEvent.on(slider, 'mouseleave', function(e) {
+        L.DomEvent.on(slider, 'mouseleave touchend', function(e) {
             map.dragging.enable();
         });
 
