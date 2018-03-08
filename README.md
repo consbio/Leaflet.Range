@@ -45,7 +45,8 @@ var slider = L.control.range({
     value: 50,
     step: 1,
     orient: 'vertical',
-    iconClass: 'leaflet-range-icon'
+    iconClass: 'leaflet-range-icon',
+    icon: true
 });
 
 slider.on('input change', function(e) {
