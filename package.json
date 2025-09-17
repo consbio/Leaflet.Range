@@ -17,11 +17,10 @@
     "url": "https://github.com/consbio/Leaflet.Range/issues"
   },
   "main": "L.Control.Range-min.js",
-  "dependencies": {
-  },
   "devDependencies": {
     "gulp": "^5.0.1",
-    "gulp-minify": "^3.1.0"
+    "gulp-rename": "^2.1.0",
+    "gulp-uglify": "^3.0.2"
   },
   "scripts": {
     "build": "gulp"

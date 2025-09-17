@@ -1,10 +1,12 @@
 var gulp = require('gulp');
-var minify = require('gulp-minify');
+var uglify = require('gulp-uglify');
+var rename = require('gulp-rename')
 
 
 function build() {
     return gulp.src('L.Control.Range.js')
-        .pipe(minify({noSource: true}))
+        .pipe(uglify())
+        .pipe(rename('L.Control.Range-min.js'))
         .pipe(gulp.dest('./'))
 }
 
